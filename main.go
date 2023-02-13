@@ -16,8 +16,8 @@ var (
 )
 
 const (
-	BUCKET_NAME = "lixeiradeteste43dfdfd5"
-	REGION      = "us-west-2"
+	BUCKET_NAME = "your_bucket_name"
+	REGION      = "your_region"
 )
 
 func init() {
@@ -111,8 +111,8 @@ func getFile(filename string) {
 }
 
 func main() {
-	// fmt.Println(createBucket())
-	// uploadFile("mykey.txt")
+	fmt.Println(createBucket())
+	uploadFile("mykey.txt")
 	fmt.Println(listObjects())
 	getFile("mykey.txt")
 }
